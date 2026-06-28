@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <img src="images/img01.jpg" alt="Profile Photo">
+        <h1>Induwari Adithya</h1>
+
+        <p>Undergraduate Student | Web Developer | Java Programmer</p>
+
+        <button onclick="showMessage()">Hire Me</button>
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am Adithya, an undergraduate student interested in
+            software development, web technologies and programming.
+        </p>
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>BSc Degree</h3>
+            <p>University of Sri jayawardenepura</p>
+            <p>2024 - Present</p>
+        </div>
+
+        <div class="card">
+            <h3>G.C.E A/L</h3>
+            <p>Badulla Central college</p>
+            <p>Completed</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">MySQL</div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Personal Tax Management System</h3>
+
+            <p>
+                Java application to calculate APIT tax according to
+                Sri Lankan tax regulations.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Pet Care Website</h3>
+
+            <p>
+                Veterinary clinic website developed using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Mood Support Platform</h3>
+
+            <p>
+                A platform to help students manage stress and seek support.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Adithya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
