@@ -36,3 +36,7 @@ button{
     border:none;
     cursor:pointer;
 }
+
+section{
+    padding:50px;
+}
