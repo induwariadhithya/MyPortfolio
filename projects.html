@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Adithya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--card-shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+        }
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+        .project-header h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .project-body {
+            padding: 20px;
+            color: var(--text-primary);
+        }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tech-tag {
+            background: var(--bg-primary);
+            color: var(--accent-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adithya</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+        <button class="theme-toggle" title="Toggle theme">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </div>
+</header>
+
+<section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Portfolio Website</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    A modern, responsive portfolio website showcasing my skills, projects, and experience. 
+                    Features smooth navigation, beautiful design, and clean code architecture.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Java Application</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    A desktop application built with Java demonstrating object-oriented programming principles, 
+                    data structures, and GUI development using Swing/JavaFX.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">Swing/JavaFX</span>
+                    <span class="tech-tag">Data Structures</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Web Application</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    A full-stack web application with interactive features, database connectivity, 
+                    and a beautiful user interface. Demonstrates frontend and backend integration.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Frontend</span>
+                    <span class="tech-tag">Backend</span>
+                    <span class="tech-tag">Database</span>
+                    <span class="tech-tag">API</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Database Project</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    A comprehensive database design project demonstrating normalization, SQL queries, 
+                    and data integrity. Includes complex queries and stored procedures.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Database Design</span>
+                    <span class="tech-tag">Normalization</span>
+                    <span class="tech-tag">Queries</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>API Development</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    RESTful API development project showcasing backend skills, request handling, 
+                    data validation, and error management.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">JSON</span>
+                    <span class="tech-tag">HTTP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Mobile Responsive Site</h3>
+            </div>
+            <div class="project-body">
+                <p>
+                    A fully responsive website optimized for mobile, tablet, and desktop devices. 
+                    Demonstrates modern CSS techniques and mobile-first development approach.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">CSS Grid</span>
+                    <span class="tech-tag">Flexbox</span>
+                    <span class="tech-tag">Media Queries</span>
+                    <span class="tech-tag">Mobile-First</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Adithya. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
