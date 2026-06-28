@@ -14,3 +14,13 @@ header{
     text-align:center;
     padding:60px;
 }
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
