@@ -10,7 +10,7 @@
     --border-color: #e0e0e0;
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
     --text-primary: #f1f5f9;
