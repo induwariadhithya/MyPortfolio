@@ -5,101 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Adithya Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            max-width: 1000px;
-            margin: 40px auto;
-        }
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-        .contact-item {
-            background: var(--bg-secondary);
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px var(--card-shadow);
-            transition: all 0.3s ease;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-        }
-        .contact-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
-        }
-        .contact-item h3 {
-            color: var(--accent-color);
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        .contact-item a {
-            color: var(--accent-dark);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid var(--border-color);
-            border-radius: 5px;
-            font-family: inherit;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-        }
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-        textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
-        }
-        @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -155,8 +60,8 @@
         </div>
 
         <div>
-            <div class="card" style="background: var(--bg-secondary); padding: 30px; border-radius: 10px; border: 1px solid var(--border-color);">
-                <h3 style="color: var(--accent-color); margin-top: 0; margin-bottom: 20px;">Send Me a Message</h3>
+            <div class="card form-card">
+                <h3>Send Me a Message</h3>
                 <form onsubmit="handleSubmit(event)">
                     <div class="form-group">
                         <label for="name">Name</label>
