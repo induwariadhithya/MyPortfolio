@@ -251,24 +251,20 @@
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const seconds = String(now.getSeconds()).padStart(2, '0');
         
-        document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+        const timeElement = document.getElementById('time');
+        if (timeElement) {
+            timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
     }
 
     // Update clock immediately and then every second
     updateClock();
     setInterval(updateClock, 1000);
 
-    // Redirect to home page after 3 seconds
+    // Redirect to home page after 5 seconds (increased from 3 for better visibility)
     setTimeout(() => {
         window.location.href = 'index.html';
-    }, 3000);
-
-    // Optional: Redirect when page fully loads (if earlier than 3 seconds)
-    window.addEventListener('load', () => {
-        // Could redirect immediately if preferred, or keep the 3-second delay for visual effect
-        // Uncomment next line to redirect on page load:
-        // window.location.href = 'index.html';
-    });
+    }, 5000);
 </script>
 
 </body>
