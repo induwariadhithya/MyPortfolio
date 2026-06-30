@@ -828,7 +828,6 @@ textarea {
 }
 
 /* Back to Top Button */
-
 #topBtn {
     display: none;
     position: fixed;
@@ -837,7 +836,7 @@ textarea {
     z-index: 1000;
     border: none;
     outline: none;
-    background: #4CAF50;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -845,11 +844,12 @@ textarea {
     font-size: 20px;
     width: 55px;
     height: 55px;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 #topBtn:hover {
-    background: #333;
-    transform: scale(1.1);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
 }
