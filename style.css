@@ -881,3 +881,7 @@ textarea {
     border-top: none;   /* removes orange top line */
     border-radius: 18px;
 }
+.project-header h3 {
+    color: white !important;
+    opacity: 1;
+}
