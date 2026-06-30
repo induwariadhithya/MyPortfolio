@@ -260,6 +260,7 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 5px 15px var(--card-shadow);
     border: 1px solid var(--border-color);
+    border-top: 4px solid #d84a3d;
     transition: all 0.3s ease;
 }
 
@@ -269,8 +270,9 @@ nav a:hover {
 }
 
 .skill-icon {
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 72px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .skill-card h3 {
